@@ -16,4 +16,4 @@ jobs:
       - name: print stats
         run: |
           echo "PR stats: ${{ steps.stats.outputs.pull_request_stats }}"
-          echo "PR stats: ${{ steps.stats.outputs.issue_stats }}"
+          echo "Issue stats: ${{ steps.stats.outputs.issue_stats }}"
