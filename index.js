@@ -17,6 +17,7 @@ async function run() {
 
         for(const item of list){
             if('pull_request' in item){
+                console.log(item);
                 if (item.state == 'open') 
                         pull_request_stats.open++;
                 else if (item.merged_at == null) 
