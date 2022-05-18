@@ -20,7 +20,7 @@ async function run() {
                 console.log(item);
                 if (item.state == 'open') 
                         pull_request_stats.open++;
-                else if (item.merged_at == null) 
+                else if (item.pull_request.merged_at == null) 
                         pull_request_stats.closed++;
                 else 
                         pull_request_stats.merged++;
